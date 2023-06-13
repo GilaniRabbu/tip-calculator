@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root {
+    --clr-bg: #201E2F;
+    --clr-body: #FAFAFA;
+
+    --logo-bg: #00FEB5;
+    --logo-clr: #2D3436;
+
+    --form-bg: #2C3E50;
+    --input-bg: #34495E;
+
+    --total-bg: #121617;
+
+    --btn-bg: #6C5CE7;
+    --btn-hov-bg: #A29BFE;
+
+    --ff-text: 'Itim', cursive;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    line-height: 1rem;
+}
+
+body {
+    background: var(--clr-bg);
+    color: var(--clr-body);
+    font-family: var(--ff-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 1rem 0;
+}
+
+.logo-area,
+.total-person,
+#form {
+    padding: 25px 35px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Common CSS */
+
+
+
+/* Logo Area */
+
+.logo-area {
+    background: var(--logo-bg);
+    text-align: center;
+}
+
+.logo-area h2 {
+    color: var(--logo-clr);
+}
+
+/* Logo Area */
+
+
+
+/* Form Area */
+
+#form {
+    background: var(--form-bg);
+}
+
+#form label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#form input {
+    width: 100%;
+    display: block;
+    color: var(--clr-body);
+    background: var(--input-bg);
+    font-family: var(--ff-text);
+    font-size: 16px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 25px;
+    outline: 0;
+}
+
+.people-area {
+    margin-top: 20px;
+}
+
+.people-area p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.number-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-area ul {
+    list-style: none;
+    display: flex;
+}
+
+.number-area ul li {
+    font-size: 30px;
+}
+
+#minus-sum,
+#plus-sum {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 3px;
+    transition: 0.5s;
+}
+
+#minus-sum:hover,
+#plus-sum:hover {
+    opacity: 0.7;
+}
+
+#minus-sum {
+    background: #E74C3C;
+}
+
+#plus-sum {
+    background: #2ECC71;
+}
+
+#people-sum {
+    margin: 5px 20px 0;
+}
+
+#calculator {
+    color: var(--clr-body);
+    background: var(--btn-bg);
+    border: 0;
+    border-radius: 25px;
+    font-family: var(--ff-text);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 35px;
+    transition: 0.5s;
+}
+
+#calculator:hover {
+    background: var(--btn-hov-bg);
+}
+
+/* Form Area */
+
+
+
+/* Summary Area */
+
+.total-person {
+    display: none;
+    background: var(--total-bg);
+    margin-bottom: 0;
+}
+
+.total-person div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-person hr {
+    border: 2px dashed var(--clr-body);
+    margin-bottom: 10px;
+}
+
+.total-person h2 {
+    color: var(--logo-bg);
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.total-person h3,
+.total-person h4 {
+    color: var(--clr-body);
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Summary Area */
+
+
+
+/* Responsive */
+
+@media (max-width: 440px) {
+    .number-area {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .number-area ul {
+        margin-bottom: 13px;
+    }
+}
