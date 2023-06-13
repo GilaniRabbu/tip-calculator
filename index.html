@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo-area">
+            <h2>Tip Calculator</h2>
+        </div>
+
+        <div id="form">
+            <label for="total-bill">Total Bill</label>
+            <input type="text" id="total-bill" placeholder="Enter your Total Bill">
+            <Label for="total-tip">Tip %</Label>
+            <input type="text" id="total-tip" placeholder="Expected Tip">
+
+            <div class="people-area">
+                <p>People</p>
+                <div class="number-area">
+                    <ul>
+                        <li id="minus-sum">-</li>
+                        <li id="people-sum">1</li>
+                        <li id="plus-sum">+</li>
+                    </ul>
+                    <button id="calculator">Calculate</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="total-person">
+            <h2>Summary</h2>
+
+            <div>
+                <h3>Total Bill</h3>
+                <h4>$ <span id="final-bill">0</span></h4>
+            </div>
+
+            <div>
+                <h3>Tip Amount</h3>
+                <h4>$ <span id="tip-amount">0</span></h4>
+            </div>
+
+            <div>
+                <h3>Tax <span>5%</span></h3>
+                <h4>$ <span id="tax-amount">0</span></h4>
+            </div>
+
+            <hr>
+
+            <div>
+                <h3>Total Per Person</h3>
+                <h4>$ <span id="total-pp">0</span></h4>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
