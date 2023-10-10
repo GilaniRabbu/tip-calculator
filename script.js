@@ -1,7 +1,6 @@
 // Select People
 const peopleSum = document.querySelector("#people-sum");
 
-
 // Increment By One
 const plusSum = document.querySelector("#plus-sum");
 let count = 1;
@@ -9,7 +8,6 @@ plusSum.addEventListener("click", () => {
     count++;
     peopleSum.innerHTML = count;
 });
-
 
 // Decrement By One
 const minusSum = document.querySelector("#minus-sum");
@@ -20,12 +18,10 @@ minusSum.addEventListener("click", () => {
     peopleSum.innerHTML = count;
 });
 
-
 // Calculate
 const calculator = document.querySelector("#calculator");
 
 calculator.addEventListener("click", () => {
-
     // Display Summary Tab
     document.querySelector(".total-person").style.display = "block";
 
@@ -35,7 +31,6 @@ calculator.addEventListener("click", () => {
 
     let total = totalBill * (tipMain / 100);
     let finalPeople = peopleSum.innerHTML;
-
 
     // Display Total Bill and Total in Summary Tab
     document.querySelector("#final-bill").innerHTML = totalBill;
